@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import Security
-import CommonCrypto
 
 class SSLPinningManager: NSObject, URLSessionDelegate {
     static let shared = SSLPinningManager()
@@ -29,9 +27,10 @@ class SSLPinningManager: NSObject, URLSessionDelegate {
         }
         let localCertificateData = NSData(contentsOfFile: localCertificatePath)
         if isSecureServer && (remoteCertificateData == localCertificateData! as Data) {
-            print("Certificate pinning is successful")
+            print("Local and remote certificates are matched")
             completionHandler(.useCredential, URLCredential(trust: serverTrust))
         } else {
+            print("Local and remote certificates are not matched")
             completionHandler(.cancelAuthenticationChallenge, nil)
         }
     }
@@ -50,7 +49,10 @@ class SSLPinningManager: NSObject, URLSessionDelegate {
             
             if let dataReceived = data {
                 let decodedString = String(decoding: dataReceived, as: UTF8.self)
+                response("SSLPinning successful with Certificate")
                 //print(decodedString)
+            } else {
+                response("SSLPinning failed")
             }
         }
         task.resume()
