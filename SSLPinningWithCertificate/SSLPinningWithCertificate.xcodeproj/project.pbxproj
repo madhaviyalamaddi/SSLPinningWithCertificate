@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77908896266AA16400741D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77908895266AA16400741D98 /* AppDelegate.swift */; };
+		77908898266AA16400741D98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77908897266AA16400741D98 /* SceneDelegate.swift */; };
+		7790889A266AA16400741D98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77908899266AA16400741D98 /* ViewController.swift */; };
+		7790889D266AA16400741D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7790889B266AA16400741D98 /* Main.storyboard */; };
+		779088A0266AA16400741D98 /* SSLPinningWithCertificate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7790889E266AA16400741D98 /* SSLPinningWithCertificate.xcdatamodeld */; };
+		779088A2266AA16700741D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779088A1266AA16700741D98 /* Assets.xcassets */; };
+		779088A5266AA16700741D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779088A3266AA16700741D98 /* LaunchScreen.storyboard */; };
+		779088B0266AA16700741D98 /* SSLPinningWithCertificateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779088AF266AA16700741D98 /* SSLPinningWithCertificateTests.swift */; };
+		779088BB266AA16700741D98 /* SSLPinningWithCertificateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779088BA266AA16700741D98 /* SSLPinningWithCertificateUITests.swift */; };
+		779088CC266AA19000741D98 /* SSLPinningManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779088CB266AA19000741D98 /* SSLPinningManager.swift */; };
+		779088D1266AA8C800741D98 /* GoogleCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 779088D0266AA8C800741D98 /* GoogleCertificate.cer */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		779088AC266AA16700741D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7790888A266AA16400741D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77908891266AA16400741D98;
+			remoteInfo = SSLPinningWithCertificate;
+		};
+		779088B7266AA16700741D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7790888A266AA16400741D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77908891266AA16400741D98;
+			remoteInfo = SSLPinningWithCertificate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77908892266AA16400741D98 /* SSLPinningWithCertificate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSLPinningWithCertificate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77908895266AA16400741D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77908897266AA16400741D98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		77908899266AA16400741D98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7790889C266AA16400741D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7790889F266AA16400741D98 /* SSLPinningWithCertificate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SSLPinningWithCertificate.xcdatamodel; sourceTree = "<group>"; };
+		779088A1266AA16700741D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		779088A4266AA16700741D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		779088A6266AA16700741D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779088AB266AA16700741D98 /* SSLPinningWithCertificateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSLPinningWithCertificateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		779088AF266AA16700741D98 /* SSLPinningWithCertificateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinningWithCertificateTests.swift; sourceTree = "<group>"; };
+		779088B1266AA16700741D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779088B6266AA16700741D98 /* SSLPinningWithCertificateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSLPinningWithCertificateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		779088BA266AA16700741D98 /* SSLPinningWithCertificateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinningWithCertificateUITests.swift; sourceTree = "<group>"; };
+		779088BC266AA16700741D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779088CB266AA19000741D98 /* SSLPinningManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinningManager.swift; sourceTree = "<group>"; };
+		779088D0266AA8C800741D98 /* GoogleCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoogleCertificate.cer; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7790888F266AA16400741D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779088A8266AA16700741D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779088B3266AA16700741D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77908889266AA16400741D98 = {
+			isa = PBXGroup;
+			children = (
+				77908894266AA16400741D98 /* SSLPinningWithCertificate */,
+				779088AE266AA16700741D98 /* SSLPinningWithCertificateTests */,
+				779088B9266AA16700741D98 /* SSLPinningWithCertificateUITests */,
+				77908893266AA16400741D98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77908893266AA16400741D98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77908892266AA16400741D98 /* SSLPinningWithCertificate.app */,
+				779088AB266AA16700741D98 /* SSLPinningWithCertificateTests.xctest */,
+				779088B6266AA16700741D98 /* SSLPinningWithCertificateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77908894266AA16400741D98 /* SSLPinningWithCertificate */ = {
+			isa = PBXGroup;
+			children = (
+				77908895266AA16400741D98 /* AppDelegate.swift */,
+				77908897266AA16400741D98 /* SceneDelegate.swift */,
+				77908899266AA16400741D98 /* ViewController.swift */,
+				7790889B266AA16400741D98 /* Main.storyboard */,
+				779088A1266AA16700741D98 /* Assets.xcassets */,
+				779088A3266AA16700741D98 /* LaunchScreen.storyboard */,
+				779088A6266AA16700741D98 /* Info.plist */,
+				7790889E266AA16400741D98 /* SSLPinningWithCertificate.xcdatamodeld */,
+				779088CB266AA19000741D98 /* SSLPinningManager.swift */,
+				779088D0266AA8C800741D98 /* GoogleCertificate.cer */,
+			);
+			path = SSLPinningWithCertificate;
+			sourceTree = "<group>";
+		};
+		779088AE266AA16700741D98 /* SSLPinningWithCertificateTests */ = {
+			isa = PBXGroup;
+			children = (
+				779088AF266AA16700741D98 /* SSLPinningWithCertificateTests.swift */,
+				779088B1266AA16700741D98 /* Info.plist */,
+			);
+			path = SSLPinningWithCertificateTests;
+			sourceTree = "<group>";
+		};
+		779088B9266AA16700741D98 /* SSLPinningWithCertificateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				779088BA266AA16700741D98 /* SSLPinningWithCertificateUITests.swift */,
+				779088BC266AA16700741D98 /* Info.plist */,
+			);
+			path = SSLPinningWithCertificateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77908891266AA16400741D98 /* SSLPinningWithCertificate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779088BF266AA16700741D98 /* Build configuration list for PBXNativeTarget "SSLPinningWithCertificate" */;
+			buildPhases = (
+				7790888E266AA16400741D98 /* Sources */,
+				7790888F266AA16400741D98 /* Frameworks */,
+				77908890266AA16400741D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSLPinningWithCertificate;
+			productName = SSLPinningWithCertificate;
+			productReference = 77908892266AA16400741D98 /* SSLPinningWithCertificate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		779088AA266AA16700741D98 /* SSLPinningWithCertificateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779088C2266AA16700741D98 /* Build configuration list for PBXNativeTarget "SSLPinningWithCertificateTests" */;
+			buildPhases = (
+				779088A7266AA16700741D98 /* Sources */,
+				779088A8266AA16700741D98 /* Frameworks */,
+				779088A9266AA16700741D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779088AD266AA16700741D98 /* PBXTargetDependency */,
+			);
+			name = SSLPinningWithCertificateTests;
+			productName = SSLPinningWithCertificateTests;
+			productReference = 779088AB266AA16700741D98 /* SSLPinningWithCertificateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		779088B5266AA16700741D98 /* SSLPinningWithCertificateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779088C5266AA16700741D98 /* Build configuration list for PBXNativeTarget "SSLPinningWithCertificateUITests" */;
+			buildPhases = (
+				779088B2266AA16700741D98 /* Sources */,
+				779088B3266AA16700741D98 /* Frameworks */,
+				779088B4266AA16700741D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779088B8266AA16700741D98 /* PBXTargetDependency */,
+			);
+			name = SSLPinningWithCertificateUITests;
+			productName = SSLPinningWithCertificateUITests;
+			productReference = 779088B6266AA16700741D98 /* SSLPinningWithCertificateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7790888A266AA16400741D98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					77908891266AA16400741D98 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					779088AA266AA16700741D98 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 77908891266AA16400741D98;
+					};
+					779088B5266AA16700741D98 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 77908891266AA16400741D98;
+					};
+				};
+			};
+			buildConfigurationList = 7790888D266AA16400741D98 /* Build configuration list for PBXProject "SSLPinningWithCertificate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77908889266AA16400741D98;
+			productRefGroup = 77908893266AA16400741D98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77908891266AA16400741D98 /* SSLPinningWithCertificate */,
+				779088AA266AA16700741D98 /* SSLPinningWithCertificateTests */,
+				779088B5266AA16700741D98 /* SSLPinningWithCertificateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77908890266AA16400741D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779088A5266AA16700741D98 /* LaunchScreen.storyboard in Resources */,
+				779088D1266AA8C800741D98 /* GoogleCertificate.cer in Resources */,
+				779088A2266AA16700741D98 /* Assets.xcassets in Resources */,
+				7790889D266AA16400741D98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779088A9266AA16700741D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779088B4266AA16700741D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7790888E266AA16400741D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7790889A266AA16400741D98 /* ViewController.swift in Sources */,
+				779088CC266AA19000741D98 /* SSLPinningManager.swift in Sources */,
+				77908896266AA16400741D98 /* AppDelegate.swift in Sources */,
+				779088A0266AA16400741D98 /* SSLPinningWithCertificate.xcdatamodeld in Sources */,
+				77908898266AA16400741D98 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779088A7266AA16700741D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779088B0266AA16700741D98 /* SSLPinningWithCertificateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779088B2266AA16700741D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779088BB266AA16700741D98 /* SSLPinningWithCertificateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		779088AD266AA16700741D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77908891266AA16400741D98 /* SSLPinningWithCertificate */;
+			targetProxy = 779088AC266AA16700741D98 /* PBXContainerItemProxy */;
+		};
+		779088B8266AA16700741D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77908891266AA16400741D98 /* SSLPinningWithCertificate */;
+			targetProxy = 779088B7266AA16700741D98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7790889B266AA16400741D98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7790889C266AA16400741D98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		779088A3266AA16700741D98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779088A4266AA16700741D98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		779088BD266AA16700741D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		779088BE266AA16700741D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		779088C0266AA16700741D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSLPinningWithCertificate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madhavi.SSLPinningWithCertificate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		779088C1266AA16700741D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSLPinningWithCertificate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madhavi.SSLPinningWithCertificate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		779088C3266AA16700741D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSLPinningWithCertificateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madhavi.SSLPinningWithCertificateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSLPinningWithCertificate.app/SSLPinningWithCertificate";
+			};
+			name = Debug;
+		};
+		779088C4266AA16700741D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSLPinningWithCertificateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madhavi.SSLPinningWithCertificateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSLPinningWithCertificate.app/SSLPinningWithCertificate";
+			};
+			name = Release;
+		};
+		779088C6266AA16700741D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSLPinningWithCertificateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madhavi.SSLPinningWithCertificateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSLPinningWithCertificate;
+			};
+			name = Debug;
+		};
+		779088C7266AA16700741D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSLPinningWithCertificateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madhavi.SSLPinningWithCertificateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSLPinningWithCertificate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7790888D266AA16400741D98 /* Build configuration list for PBXProject "SSLPinningWithCertificate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779088BD266AA16700741D98 /* Debug */,
+				779088BE266AA16700741D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779088BF266AA16700741D98 /* Build configuration list for PBXNativeTarget "SSLPinningWithCertificate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779088C0266AA16700741D98 /* Debug */,
+				779088C1266AA16700741D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779088C2266AA16700741D98 /* Build configuration list for PBXNativeTarget "SSLPinningWithCertificateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779088C3266AA16700741D98 /* Debug */,
+				779088C4266AA16700741D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779088C5266AA16700741D98 /* Build configuration list for PBXNativeTarget "SSLPinningWithCertificateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779088C6266AA16700741D98 /* Debug */,
+				779088C7266AA16700741D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7790889E266AA16400741D98 /* SSLPinningWithCertificate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7790889F266AA16400741D98 /* SSLPinningWithCertificate.xcdatamodel */,
+			);
+			currentVersion = 7790889F266AA16400741D98 /* SSLPinningWithCertificate.xcdatamodel */;
+			path = SSLPinningWithCertificate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7790888A266AA16400741D98 /* Project object */;
+}
